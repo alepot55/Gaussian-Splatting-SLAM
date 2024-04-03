@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from my_method.nerfstudio.engine.callbacks import TrainingCallback, TrainingCallbackLocation
+from nerfstudio.engine.callbacks import TrainingCallback, TrainingCallbackLocation
 from my_method.tracker import Tracker, TrackerConfig
 from nerfstudio.models.splatfacto import SplatfactoModel, SplatfactoModelConfig
 from nerfstudio.cameras.cameras import Cameras

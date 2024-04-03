@@ -1,0 +1,12 @@
+pyproject.toml
+my_method/__init__.py
+my_method/config.py
+my_method/model.py
+my_method/pipeline.py
+my_method/tracker.py
+my_method.egg-info/PKG-INFO
+my_method.egg-info/SOURCES.txt
+my_method.egg-info/dependency_links.txt
+my_method.egg-info/entry_points.txt
+my_method.egg-info/requires.txt
+my_method.egg-info/top_level.txt

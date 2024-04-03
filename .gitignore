@@ -1,3 +1,4 @@
 data/*
 my_method-egg-info(*
 outputs/*
+my_method/__pycache__/*

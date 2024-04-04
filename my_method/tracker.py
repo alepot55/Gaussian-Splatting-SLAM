@@ -37,7 +37,7 @@ class Tracker(CameraOptimizer):
         self.pose_adjustment.requires_grad = True
 
     def apply_to_camera2(self, camera: Cameras):
-        camera.camera_to_worlds = torch.ones((1, 3, 4), device=camera.device)
+        camera.camera_to_worlds = torch.ones((1, 3, 4), device=camera.device) * 0.5
         super().apply_to_camera(camera)
 
     def get_param_groups(self, param_groups: dict = {}) -> None:

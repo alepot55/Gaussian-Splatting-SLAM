@@ -61,21 +61,22 @@ Method = MethodSpecification(
     steps_per_eval_batch=0,
     steps_per_save=2000,
     steps_per_eval_all_images=1000,
-    max_num_iterations=60000,
+    max_num_iterations=60000, # raddoppiato io
     mixed_precision=False,
-    pipeline=VanillaPipelineConfig(
-        _target=VanillaPipeline,
+    pipeline=MyPipelineConfig(
+        _target=MyPipeline,
         datamanager=FullImageDatamanagerConfig(
             dataparser=NerfstudioDataParserConfig(load_3D_points=True),
             cache_images_type="uint8",
         ),
         model=MyModelConfig(
             _target=MyModel, 
+            use_scale_regularization=True, # messo io
             tracker=TrackerConfig(
                 _target=Tracker, 
                 mode="SE3",
-                trans_l2_penalty=0.0,
-                rot_l2_penalty=0.0,
+                trans_l2_penalty=0.0, # messo io
+                rot_l2_penalty=0.0, # messo io
                 )
             ),
     ),
@@ -107,13 +108,14 @@ Method = MethodSpecification(
             "optimizer": AdamOptimizerConfig(lr=0.001, eps=1e-15), 
             "scheduler": None
         },
-        "camera_opt": { # senza questo il rersto fa schifo
+        "camera_opt": { # messo io
             "optimizer": AdamOptimizerConfig(lr=1e-3, eps=1e-15),
             "scheduler": ExponentialDecaySchedulerConfig(lr_final=5e-5, max_steps=40000),
         },
     },
     viewer=ViewerConfig(num_rays_per_chunk=1 << 15),
     vis="viewer",
+    use_grad_scaler=True, # messo io (aumenta tempo)
 ),
     description="Nuovo metodo di slam per 3dgs",
 )

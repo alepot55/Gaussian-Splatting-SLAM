@@ -1,4 +1,4 @@
-# Gaussian Splatting for Simultaneous localization and mapping (SLAM)
+# Gaussian Splatting for Simultaneous localization and mapping
 
 This project aims is a dense Simultaneous Localization and Mapping (SLAM) system that aims to leverage Gaussian splatting to achieve photo-realistic reconstructions. For the last-year excellence program at Sapienza University of Rome, the project focuses on creating a robust model for SLAM using Gaussian representations. SLAM is a critical component in robotics and computer vision, enabling robots and autonomous systems to navigate and map their environment. Gaussian-SLAM si basa su NerfStudio, una libreria che offre funzionalità avanzate per la ricostruzione 3D. In particolare, Gaussian-SLAM utilizza il metodo splatfacto di NerfStudio come punto di partenza. 
 

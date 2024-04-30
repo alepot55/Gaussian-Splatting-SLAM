@@ -7,7 +7,7 @@ The method builds upon the foundation provided by NerfStudio, a powerful library
 In the image below it is shown the SLAM system oerview, with the implemented components highlighted:
 
 <p align="center">
-    <img src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/1592bd44-b794-460f-b754-501145c51102" width="80%">
+    <img src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/1592bd44-b794-460f-b754-501145c51102" width="100%">
 </p>
 
 Professor: _Thomas Alessandro Ciarfuglia_

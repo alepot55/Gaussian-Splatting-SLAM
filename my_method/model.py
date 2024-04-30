@@ -44,14 +44,6 @@ class MyModel(SplatfactoModel):
     def populate_modules(self):
         """
         Populates the modules required for the model.
-
-        This method calls the base class's `populate_modules` method and then sets the mode to "mapping" and initializes the tracker.
-
-        Args:
-            None
-
-        Returns:
-            None
         """
         super().populate_modules()
         self.mode = "mapping" 
@@ -60,12 +52,6 @@ class MyModel(SplatfactoModel):
     def update(self, step):
         """
         Updates the mode of the object based on the current mode.
-
-        Parameters:
-        - step: The current step of the update process.
-
-        Returns:
-        None
         """
         self.mode = "tracking" if self.mode == "mapping" else "mapping"
 
@@ -127,29 +113,29 @@ class MyModel(SplatfactoModel):
         return super().get_outputs(camera)
     
     def get_training_callbacks(self, training_callback_attributes):
-            """
-            Returns a list of training callbacks for the model.
+        """
+        Returns a list of training callbacks for the model.
 
-            Args:
-                training_callback_attributes (list): A list of training callback attributes.
+        Args:
+            training_callback_attributes (list): A list of training callback attributes.
 
-            Returns:
-                list: A list of training callbacks.
+        Returns:
+            list: A list of training callbacks.
 
-            """
-            # Get the training callbacks from the base class
-            cbs = super().get_training_callbacks(training_callback_attributes)
+        """
+        # Get the training callbacks from the base class
+        cbs = super().get_training_callbacks(training_callback_attributes)
 
-            # Append a new training callback for updating the mode
-            cbs.append(
-                TrainingCallback(
-                    [TrainingCallbackLocation.BEFORE_TRAIN_ITERATION],
-                    self.update,
-                )
+        # Append a new training callback for updating the mode
+        cbs.append(
+            TrainingCallback(
+                [TrainingCallbackLocation.BEFORE_TRAIN_ITERATION],
+                self.update,
             )
+        )
 
-            # Return the updated list of training callbacks
-            return cbs
+        # Return the updated list of training callbacks
+        return cbs
     
     def covisibility(self, camera_1, camera_2):
         """

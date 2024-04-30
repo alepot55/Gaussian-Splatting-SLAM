@@ -5,3 +5,4 @@ my_method/__pycache__/*
 my_data/*
 my_method/outputs/*
 build/*
+gaussian_splatting_slam.egg-info/*

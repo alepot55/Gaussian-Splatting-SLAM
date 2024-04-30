@@ -1,0 +1,2 @@
+[nerfstudio.method_configs]
+my-method = gaussian_splatting_slam.config:Method

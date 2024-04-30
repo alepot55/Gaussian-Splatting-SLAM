@@ -5,7 +5,7 @@ from typing import Type
 from gsplat.project_gaussians import project_gaussians
 from nerfstudio.cameras.cameras import Cameras
 from nerfstudio.engine.callbacks import TrainingCallback, TrainingCallbackLocation
-from my_method.tracker import TrackerConfig
+from gaussian_splatting_slam.tracker import TrackerConfig
 from nerfstudio.models.splatfacto import SplatfactoModel, SplatfactoModelConfig, projection_matrix
 
 @dataclass

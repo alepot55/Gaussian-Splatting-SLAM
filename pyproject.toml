@@ -1,5 +1,5 @@
 [project]
-name = "my_method"
+name = "gaussian_splatting_slam"
 version = "1.0.0"
 
 dependencies = [
@@ -7,7 +7,7 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["my_method*"]
+include = ["gaussian_splatting_slam*"]
 
 [project.entry-points.'nerfstudio.method_configs']
-my-method = 'my_method.config:Method'
+my-method = 'gaussian_splatting_slam.config:Method'

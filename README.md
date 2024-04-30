@@ -31,12 +31,12 @@ Professor: _Thomas Alessandro Ciarfuglia_
      ```
      ns-train -h
      ```
-     The `my_method` method should appear in the list of subcommands.
+     The `gaussian_splatting_slam` method should appear in the list of subcommands.
 
 4. **Training the Model**:
    - Launch training using the command:
      ```
-     ns-train my_method --data <data_folder>
+     ns-train gaussian_splatting_slam --data <data_folder>
      ```
      Replace `<data_folder>` with the path to your data folder.
    - You can use either [existing datasets](https://docs.nerf.studio/quickstart/existing_dataset.html) or [create your custom dataset](https://docs.nerf.studio/quickstart/custom_dataset.html).

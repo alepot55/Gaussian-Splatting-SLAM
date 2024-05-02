@@ -4,15 +4,27 @@ This project aims is a dense Simultaneous Localization and Mapping (SLAM) system
 
 The method builds upon the foundation provided by NerfStudio, a powerful library for 3D reconstruction. Specifically, Gaussian-SLAM utilizes NerfStudio’s Splatfacto method as a starting point. On top of that, a tracking module is implemented to to enhance system robustness against camera motion and occlusions. As a result, unlike many SLAM models that rely on depth information, the model can operates solely on RGB images. Lastly, to maintain a diverse set of images, a covisibility control mechanism aims to select a subset of diverse images to balance the need for coverage with minimizing redundancy.
 
-In the image below it is shown the SLAM system oerview, with the implemented components highlighted:
-
+On the left, the image displays an overview of the SLAM system, with the highlighted implemented components. On the right, you can see the output scene representation of my custom dataset (my room) after 20 minutes of training on a 1-minute RGB video.
 <p align="center">
-    <img src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/1592bd44-b794-460f-b754-501145c51102" width="100%">
+    <table>
+        <tr>
+            <td>
+                <img src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/1592bd44-b794-460f-b754-501145c51102" width="100%">
+            </td>
+            <td>
+                <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/f829f6ac-1f62-4308-ba8b-ba1894d31344" type="video/webm"> width="320" height="240" controls>
+                </video>
+            </td>
+        </tr>
+    </table>
 </p>
+
+
 
 Professor: _Thomas Alessandro Ciarfuglia_
 
-## Getting Started
+## Getting Started.
+
 
 1. **Install NerfStudio**:
    - Follow the guidelines provided [here](https://docs.nerf.studio/quickstart/installation.html).

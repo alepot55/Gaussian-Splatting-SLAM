@@ -13,6 +13,10 @@ The developed method builds upon the foundation provided by NerfStudio, a powerf
                 <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/f829f6ac-1f62-4308-ba8b-ba1894d31344" type="video/webm"> width="320" height="240" controls>
                 </video>
             </td>
+            <td>
+                <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/2590cd32-761f-41a1-8106-289514dddde4" type="video/webm"> width="320" height="240" controls>
+                </video>
+            </td>
         </tr>
     </table>
 </p>

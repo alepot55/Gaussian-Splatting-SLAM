@@ -8,7 +8,7 @@ The developed method builds upon the foundation provided by NerfStudio, a powerf
     <img src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/1592bd44-b794-460f-b754-501145c51102" width="100%">
 </p>
 
-Below, the videos show the output scene representation of my custom dataset (my room, my kitchen and my living room) after 20 minutes of training on a 1-minute RGB video. Results shows it can geenralize well also on bigger scenes.
+Below, the videos show the output scene representation of my custom dataset (my room, my kitchen and my living room) after 20 minutes of training on a 1-minute RGB video. Results shows it can geenralize also on bigger scenes.
 <p align="center">
     <table>
         <tr>

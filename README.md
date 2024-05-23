@@ -13,16 +13,14 @@ Below, the videos show the output scene representation of my custom dataset (my 
     <table>
         <tr>
             <td>
-                <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/3873ef02-11ca-4fdb-bbb8-a02bf7c55339" type="video/webm" width="320" height="240" controls>
-                </video>
+                <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/3873ef02-11ca-4fdb-bbb8-a02bf7c55339" type="video/webm" width="320" height="240" controls></video>
             </td>
             <td>
-                <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/efa44483-a665-41ca-8e2f-37018e24aff4" type="video/webm" width="320" height="240" controls>
-                </video>
+                <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/efa44483-a665-41ca-8e2f-37018e24aff4" type="video/webm" width="320" height="240" controls></video>
             </td>
         </tr>
     </table>
-    <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/91978c1e-f757-4e60-9f89-8a4325a594fb" type="video/webm" width="100%">
+    <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/91978c1e-f757-4e60-9f89-8a4325a594fb" type="video/webm" width="100%"></video>
 </p>
 
 Professor: _Thomas Alessandro Ciarfuglia_

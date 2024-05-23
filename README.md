@@ -4,24 +4,20 @@ The proposed model is a dense Simultaneous Localization and Mapping (SLAM) syste
 
 The developed method builds upon the foundation provided by NerfStudio, a powerful library for 3D reconstruction. Specifically, my model modifies NerfStudio’s Splatfacto method to adapt to SLAM systems. Unlike many SLAM models that rely on depth information, the model can operates solely on RGB images thanks to a tracking module enhancing system robustness against camera motion and occlusions from photometric error. To maintain a diverse set of images and improve efficiency, a covisibility control mechanism aims to select a subset of diverse images to balance the need for coverage with minimizing redundancy. All implemented components are highlighted image below, diasplaying an overview of the SLAM system used. On the right, the video shows the output scene representation of my custom dataset (my room) after 20 minutes of training on a 1-minute RGB video.
 <p align="center">
+    <img src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/1592bd44-b794-460f-b754-501145c51102" width="100%">
     <table>
         <tr>
             <td>
-                <img src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/1592bd44-b794-460f-b754-501145c51102" width="100%">
-            </td>
-            <td>
-                <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/f829f6ac-1f62-4308-ba8b-ba1894d31344" type="video/webm"> width="320" height="240" controls>
+                <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/3873ef02-11ca-4fdb-bbb8-a02bf7c55339" type="video/webm"> width="320" height="240" controls>
                 </video>
             </td>
             <td>
-                <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/2590cd32-761f-41a1-8106-289514dddde4" type="video/webm"> width="320" height="240" controls>
+                <video src="https://github.com/alessandro-potenza/Gaussian_Splatting_SLAM/assets/61759069/efa44483-a665-41ca-8e2f-37018e24aff4" type="video/webm"> width="320" height="240" controls>
                 </video>
             </td>
         </tr>
     </table>
 </p>
-
-
 
 Professor: _Thomas Alessandro Ciarfuglia_
 

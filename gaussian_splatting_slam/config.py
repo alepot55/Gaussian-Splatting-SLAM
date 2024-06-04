@@ -32,8 +32,6 @@ Method = MethodSpecification(
             ),
 
             model=MyModelConfig(
-
-                # In Spatfacto
                 _target=MyModel, 
                 refine_every=199, # da 100
                 warmup_length=1000, # da 500
@@ -44,8 +42,8 @@ Method = MethodSpecification(
                 tracker=TrackerConfig(
                         _target=Tracker, 
                         mode="SE3",
-                        trans_l2_penalty=0.0, # messo io
-                        rot_l2_penalty=0.0, # messo io
+                        trans_l2_penalty=0.0,
+                        rot_l2_penalty=0.0,
                     )
                 ),
         ),
@@ -77,7 +75,7 @@ Method = MethodSpecification(
                 "optimizer": AdamOptimizerConfig(lr=0.001, eps=1e-15), 
                 "scheduler": None
             },
-            "camera_opt": { # messo io
+            "camera_opt": { 
                 "optimizer": AdamOptimizerConfig(lr=1e-3, eps=1e-15),
                 "scheduler": ExponentialDecaySchedulerConfig(lr_final=5e-5, max_steps=20000), # da 40000
             },

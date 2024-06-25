@@ -56,6 +56,7 @@ class MyPipeline(VanillaPipeline):
             camera, batch = self.datamanager.next_train(step)
             self.window.append(camera)
             return camera, batch
+
         else:
             # Initialize the maximum covisibility with the threshold value
             max_covisibility = self.config.covisibility_threshold
@@ -95,10 +96,12 @@ class MyPipeline(VanillaPipeline):
             Tuple[Any, Dict[str, Any], Dict[str, Any]]: The model outputs, loss dictionary, and metrics dictionary.
 
         """
-        camera, batch = self.get_data(step)
-        model_outputs = self._model(camera)
-        metrics_dict = self.model.get_metrics_dict(model_outputs, batch)
-        loss_dict = self.model.get_loss_dict(model_outputs, batch, metrics_dict)
+        if self.model.mode == "tracking":
+            self.camera, self.batch = self.get_data(step)
+
+        model_outputs = self._model(self.camera)
+        metrics_dict = self.model.get_metrics_dict(model_outputs, self.batch)
+        loss_dict = self.model.get_loss_dict(model_outputs, self.batch, metrics_dict)
 
         return model_outputs, loss_dict, metrics_dict
     
